@@ -6,6 +6,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Gilroy";
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    color: #161C2D;
 }
 
 @font-face {
@@ -33,15 +40,7 @@
     font-style: normal;
     font-display: block;
 }
-*{
-    border: none;
-    outline: none;
-    font-family: "Gilroy";
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-    color: #161C2D;
-}
+
 
 /* Nav Start */
 .nav{
