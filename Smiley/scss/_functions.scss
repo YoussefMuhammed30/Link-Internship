@@ -1,0 +1,3 @@
+@function spacing($count) {
+  @return $count * 10px;
+}

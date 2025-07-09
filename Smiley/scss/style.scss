@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins";
+@import"functions";
+@import"placeholders";
+
+.container{
+    width:600px;
+    height: 600px;
+    background-color:#eee;
+    margin: 20px auto;
+    @extend %center-flex;
+
+    .emoji{
+    @include circle(300px,$emoji-color);
+    position: relative;
+
+    
+    .eyes{
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+    @extend %center-flex;
+    justify-content: space-around; 
+    .left-eye,.right-eye{
+        @include circle(30px,$eyes-color);
+        background-color: $eyes-color;
+    }
+
+
+}
+.mouth{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 50px;
+    border-bottom: 10px solid $lips-color;
+    border-radius: 0 0 100px 100px;
+}
+    }
+}
